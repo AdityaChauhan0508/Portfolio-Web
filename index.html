@@ -1,186 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+
+  <!-- META -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aditya Chauhan | Full Stack & AI Developer Portfolio" />
+  <meta name="keywords" content="Full Stack Developer, Web Developer, AI Engineer, Portfolio" />
+  <meta name="author" content="Aditya Chauhan" />
+
+  <title>Aditya Chauhan | Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+  <div class="logo">A⚡C</div>
+
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Journey</a>
+    <a href="#portfolio">Work</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <div class="nav-progress">
+    <span id="scroll-bar"></span>
+  </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <h1>
+      Hi, I'm <span>Aditya Chauhan</span>
+    </h1>
+
+    <h2>
+      <span id="typing"></span>
+    </h2>
+
+    <p>
+      I design, build, and scale modern web & AI-powered systems
+      with clean architecture and strong performance.
+    </p>
+
+    <div class="hero-btns">
+
+      <a href="#contact" class="btn primary">Hire Me</a>
+
+      <a href="#portfolio" class="btn outline">View Work</a>
+
+      <a href="./Aditya-Chauhan-Resume.pdf"
+        target="_blank"
+        class="btn ghost">
+        Download Resume
+      </a>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <h2 class="section-title">My Journey</h2>
+  <div class="line"></div>
+
+  <div class="about-grid">
+
+    <!-- Story -->
+
+    <div class="about-story">
+
+      <p>
+        My journey in technology started with curiosity and
+        turned into passion for building impactful digital products.
+      </p>
+
+      <p>
+        From learning core computer science fundamentals
+        to developing AI-powered platforms, I continuously
+        strive to grow as an engineer.
+      </p>
+
+      <p>
+        Today, I focus on building scalable, maintainable,
+        and user-focused systems.
+      </p>
+
+    </div>
+
+
+    <!-- Stats -->
+
+    <div class="about-stats">
+
+      <div class="stat">
+        <h3>3+</h3>
+        <p>Projects</p>
+      </div>
+
+      <div class="stat">
+        <h3>2+</h3>
+        <p>Years Experience</p>
+      </div>
+
+      <div class="stat">
+        <h3>10+</h3>
+        <p>Technologies</p>
+      </div>
+
+      <div class="stat">
+        <h3>5+</h3>
+        <p>Certifications</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills" id="skills">
+
+  <h2 class="section-title">Tech Stack</h2>
+  <div class="line"></div>
+
+
+  <!-- Filters -->
+
+  <div class="skill-filters">
+
+    <button class="active" data-filter="all">All</button>
+     <!-- <button data-filter="ai">Programming Language</button> -->
+    <button data-filter="frontend">Frontend</button>
+    <button data-filter="backend">Backend</button>
+    <button data-filter="tools">Tools</button>
+    <button data-filter="ai">AI</button>
+   
+
+  </div>
+
+
+  <!-- Skills -->
+
+  <div class="skill-list">
+
     
-    <div class="main-container">
-        <!-- siderbar -->
-        <div class="sidebar">
+    <div class="skill-card frontend">
+      <h4>Java</h4>
+      <div class="bar"><span data-level="95"></span></div>
+    </div>
+    
+    <div class="skill-card frontend">
+      <h4>C++</h4>
+      <div class="bar"><span data-level="95"></span></div>
+    </div>
 
-            <!-- profile -->
-            <div class="profile">
-                <img src="./aditya.jpg" alt="" >
-                <h2>Aditya Chauhan</h2>
-                <p>Full Stack Developer</p>
-            </div>
-            
+    <div class="skill-card frontend">
+      <h4>HTML / CSS</h4>
+      <div class="bar"><span data-level="95"></span></div>
+    </div>
 
-             <!--contact  -->
+    <div class="skill-card frontend">
+      <h4>JavaScript</h4>
+      <div class="bar"><span data-level="90"></span></div>
+    </div>
 
-             <div class="contact">
-                  <div class="email">
-                    <h3 class="label">Email</h3>
-                    <a href="mailto:rohit@gmail.com" class="value">officialemail032@gmail.com</a>
-                  </div>
-                  <div class="phone">
-                    <h3 class="label">Phone</h3>
-                    <a href="tel:8885664702" class="value">+91 9873316546</a>
-                  </div>
-                  <div class="location">
-                    <h3 class="label">Location</h3>
-                    <p class="value">Noida, UttarPradesh</p>
-                  </div>
-             </div>
+    <div class="skill-card frontend">
+      <h4>React</h4>
+      <div class="bar"><span data-level="85"></span></div>
+    </div>
+
+    <div class="skill-card backend">
+      <h4>Node.js</h4>
+      <div class="bar"><span data-level="80"></span></div>
+    </div>
+
+    <div class="skill-card backend">
+      <h4>MongoDB</h4>
+      <div class="bar"><span data-level="75"></span></div>
+    </div>
+
+    <div class="skill-card backend">
+      <h4>MySQL</h4>
+      <div class="bar"><span data-level="75"></span></div>
+    </div>
+
+    <div class="skill-card tools">
+      <h4>Git / GitHub</h4>
+      <div class="bar"><span data-level="100"></span></div>
+    </div>
+
+    <div class="skill-card tools">
+      <h4>Netlify / Vercel</h4>
+      <div class="bar"><span data-level="100"></span></div>
+    </div>
+
+    <div class="skill-card ai">
+      <h4>Machine Learning</h4>
+      <div class="bar"><span data-level="70"></span></div>
+    </div>
+
+  </div>
+
+</section>
 
 
-             <!-- social -->
+<!-- ================= EDUCATION ================= -->
+
+<section class="education" id="education">
+
+  <h2 class="section-title">Learning Journey</h2>
+  <div class="line"></div>
 
 
-             <div class="social">
-                <a href="https://x.com/Aditya_Ch_20"><img src="https://simpleicons.org/icons/x.svg" alt=""></a>
-                <a href="https://github.com/AdityaChauhan0508"><img src="https://simpleicons.org/icons/git.svg" alt=""></a>
-                <a href="https://www.linkedin.com/in/aditya-chauhan-016986247/"><img src="https://www.svgrepo.com/show/144030/linkedin-square-logo.svg" alt=""></a>
-             </div>
+  <div class="timeline">
+
+
+    <div class="timeline-item">
+
+      <span class="dot"></span>
+
+      <div class="content">
+
+        <h3>2022 – 2027</h3>
+        <h4>B.Tech + M.Tech Integrated (CSE)</h4>
+
+        <p>
+          NIET, Greater Noida
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <span class="dot"></span>
+
+      <div class="content">
+
+        <h3>2021 - 2022</h3>
+        <h4>R.S.S International School [Noida Sec – 45, 201301 ]</h4>
+
+        <p>
+         Senior Secondary (Class 12th, CBSE)
+
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <span class="dot"></span>
+
+      <div class="content">
+
+        <h3>2019 - 2020</h3>
+        <h4>R.S.S International School [Noida Sec – 45, 201301 ]</h4>
+
+        <p>
+          Secondary (Class 10th, CBSE)
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio" id="portfolio">
+
+  <h2 class="section-title">Featured Work</h2>
+  <div class="line"></div>
+
+
+  <div class="project-grid">
+
+
+    <!-- Project -->
+
+    <!-- GPT Clone Project -->
+
+    <div class="project-card">
+
+    <img 
+        src="./gpt-clone.png"
+        loading="lazy"
+        alt="GPT Clone Web Application"
+    >
+
+    <div class="project-info">
+
+        <h3>GPT Clone – AI Chat Application</h3>
+
+        <p>
+        A full-stack AI-powered chat application inspired by ChatGPT,
+        built using modern web technologies with OpenAI API integration,
+        authentication, and responsive UI.
+        </p>
+
+        <div class="project-links">
+
+        <a 
+            href="https://github.com/AdityaChauhan0508/gptClone"
+            target="_blank"
+            rel="noopener"
+        >
+            GitHub
+        </a>
+
+        <a 
+            href="https://gpt-clone-omega-puce.vercel.app/"
+            target="_blank"
+            rel="noopener"
+        >
+            Live Demo
+        </a>
+
+        <button class="open-modal">
+            Case Study
+        </button>
+
         </div>
 
-        
-        <!-- main-content -->
-        <div class="main-content">
-          
-            <!-- navigation -->
-             <div id="navigation">
-                <nav>
-                    <a href="#about" class="active">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#education">Education</a>
-                    <a href="#portfolio">Portfolio</a>
-                </nav>
-             </div>
-
-            <!-- about me -->
-             <div id="about">
-                <h2 class="heading">About Me</h2>
-                <div class="line"></div>
-                <p class="content">I am a motivated and curious Computer Science & Engineering student who enjoys building web applications and learning new technologies. Through my projects and internship work, I have gained practical experience in full-stack development and problem-solving. I am always eager to take on challenges, improve my skills, and contribute to meaningful projects in a growing organization.
-
-                </p>
-             </div>
-
-            <!-- Skills -->
-             <div id="skills">
-                <h2 class="heading">Skills</h2>
-                <div class="line"></div>
-                <div class="grid-container">
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/html5.svg" alt="">
-                        <h3>HTML5</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/css.svg" alt="">
-                        <h3>CSS3</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/javascript.svg" alt="">
-                        <h3>Javascript</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/react.svg" alt="">
-                        <h3>React</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/git.svg" alt="">
-                        <h3>Git & Github</h3>
-                    </div>
-                    <div class="item">
-                        <img src="https://simpleicons.org/icons/typescript.svg" alt="">
-                        <h3>Typescript</h3>
-                    </div>
-                </div>
-             </div>
-
-            <!-- Education -->
-             <div id="education">
-                <h2 class="heading">Education</h2>
-                <div class="line"></div>
-                <div class="edtech">
-
-                    <div class="edfirst">
-                        <div class="year">2022-2027</div>
-                        <h3 class="degree">M.Tech Integrated in CSE</h3>
-                        <p class="college">Noida Institute of Engineering and Technology</p>
-                        <p class="work">Focused on software development, algorithms, and web technologies. Completed a final year project on building a responsive e-commerce platform.</p>
-                        <div class="goal"></div>
-                    </div>
-                    <div class="edsecond">
-                        <div class="year">2021-2022</div>
-                        <h3 class="degree">Senior Secondary (Class 12, CBSE)</h3>
-                        <p class="college">R.S.S International School [Noida Sec – 45, 201301]</p>
-                        <p class="work"></p>
-                        <div class="goal"></div>
-                    </div>
-                    <div class="edsecond">
-                        <div class="year">2019-2020</div>
-                        <h3 class="degree">Secondary (Class 10, CBSE)</h3>
-                        <p class="college">R.S.S International School [Noida Sec – 45, 201301]</p>
-                        <p class="work"></p>
-                        <div class="goal"></div>
-                    </div>
-
-                    <div class="liner"></div>
-                </div>
-               
-                
-            </div>
-
-            <!-- Portfolio -->
-             <div id="portfolio">
-                <h2 class="heading">Portfolio</h2>
-                <div class="line"></div>
-
-                <div class="project-container">
-                    <div class="project">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGNvZGluZ3xlbnwwfHx8fDE2NTg0MjU5NjM&ixlib=rb-1.2.1&q=80&w=400" alt="">
-                        <div class="card">
-                            <h3>E-Commerce Website</h3>
-                            <p>Developed a responsive e-commerce platform with product listings, a shopping cart, and secure checkout functionality.</p>
-                            <span>HTML</span><span>CSS </span><span>JavaScript </span>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="interview.png" alt="">
-                        <div class="card">
-                            <h3>AI Mock Interview </h3>
-                            <p>Built an AI-powered mock interview platform using Next.js and Gemini API to simulate real interview experiences with real-time feedback.</p>
-                            <p>Integrated authentication, database storage, and dynamic question generation.</p>
-                            <span>React</span><span>Next.js</span><span>Flexbox</span><span>Drizzle ORM</span><span>Gemini API</span>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE4fHxwb3J0Zm9saW98ZW58MHx8fHwxNjU4NDI2MDUx&ixlib=rb-1.2.1&q=80&w=400" alt="">
-                        <div class="card">
-                            <h3>Online Examination System </h3>
-                            <p>Designed and implemented a Spring-based online exam management system with admin and student modules.</p>
-                            <span>Java</span><span>Spring MVc</span> <span>JDBC</span> <span>MySQL</span>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="portfolio.png" alt="">
-                        <div class="card">
-                            <h3>Portfolio Website </h3>
-                            <p>Built a personal portfolio website to showcase projects, resume, and contact details with a responsive layout.</p>
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
-                        </div>
-                    </div>
-                </div>
-             </div>
-
-        </div> 
     </div>
+
+    </div>
+
+
+    <div class="project-card">
+
+      <img src="./portfolio.png" loading="lazy" alt="E-Commerce Project">
+
+      <div class="project-info">
+
+        <h3>My Portfolio</h3>
+
+        <p>
+          Full-stack shopping platform with authentication,
+          payments, and admin dashboard.
+        </p>
+
+        <div class="project-links">
+
+          <a href="https://github.com/AdityaChauhan0508/Portfolio-Web" target="_blank">GitHub</a>
+          <a href="https://portfolioadityachauhan.netlify.app/" target="_blank">Live Demo</a>
+          <button class="open-modal">Case Study</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-card">
+
+      <img src="./interview.png" loading="lazy" alt="AI Interview App">
+
+      <div class="project-info">
+
+        <h3>AI Mock Interview</h3>
+
+        <p>
+          AI-powered interview simulation platform
+          with analytics dashboard.
+        </p>
+
+        <div class="project-links">
+
+          <a href="https://github.com/AdityaChauhan0508/MOCK-Interview" target="_blank">GitHub</a>
+          <a href="https://mock-interview-ai-wine.vercel.app/" target="_blank">Live Demo</a>
+          <button class="open-modal">Case Study</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="line"></div>
+
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
+  >
+
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn primary full">
+      Send Message
+    </button>
+
+  </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <p>
+    © 2026 Aditya Chauhan | Built with passion and precision
+  </p>
+
+</footer>
+
+
+<!-- ================= JS ================= -->
+
+<script src="main.js"></script>
 
 </body>
 </html>
