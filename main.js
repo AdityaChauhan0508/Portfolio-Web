@@ -4,9 +4,9 @@
 
 const roles = [
   "Full Stack Developer",
-  "AI Engineer",
-  "Web Architect",
-  "Problem Solver"
+//   "AI Engineer",
+//   "Web Architect",
+//   "Problem Solver"
 ];
 
 const typingEl = document.getElementById("typing");
